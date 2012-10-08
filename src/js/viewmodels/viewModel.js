@@ -1,19 +1,27 @@
 function ViewModel(global) {
 
     // VIEW NAMES
-
     this.VIEWS = global.VIEWS;
+
+    // AVAILABLE PLATFORMS
+    this.PLATFORMS = global.PLATFORMS;
 
     // OBSERVABLE DATA
 
-    this.activeView = ko.observable(this.VIEWS.CHAT_LIST);
+    this.activeView = ko.observable(this.VIEWS.CHANNEL_LIST);
+
+    this.platform = ko.observable(this.PLATFORMS.ANDROID);
 
     this.loggedIn = ko.observable(true);
 
-    this.chats = ko.observableArray([
+    this.newChannelName = ko.observable();
+
+    this.channels = ko.observableArray([
         new Channel('sport', 1, 4),
         new Channel('tv', 3, 6)
     ]);
+
+    this.selectedChannel = ko.observable();
 
     this.messages = ko.observableArray([
         new Message('Text from 1', 1, "24/Dev"),
@@ -27,28 +35,31 @@ function ViewModel(global) {
     // VIEW TRANSITIONS
 
     this.showMessages = function () {
-        alert("MESSAGES");
         this.activeView(this.VIEWS.MESSAGE_LIST);
     };
 
-    this.showChats = function () {
-        alert("CHAT");
-        this.activeView(this.VIEWS.CHAT_LIST);
+    this.showChannels = function () {
+        this.activeView(this.VIEWS.CHANNEL_LIST);
     };
 
     this.showLogIn = function () {
-        alert("LOGIN");
         this.activeView(this.VIEWS.LOGIN);
     };
 
     this.showLogOut = function () {
-        alert("MESSAGES LOGOUT");
-        this.activeView(this.VIEWS.CHAT_LIST);
+        this.activeView(this.VIEWS.CHANNEL_LIST);
     };
 
-    this.showCreateChat = function () {
-        alert("CREATE CHAT");
-        this.activeView(this.VIEWS.CREATE_CHAT);
+    this.showCreateChannel = function () {
+        this.activeView(this.VIEWS.CREATE_CHANNEL);
+    };
+
+    this.createChannel = function () {
+
+        var newChannel = new Channel(this.newChannelName(), 3, 4);
+
+        this.channels.push(newChannel);
+        this.showChannels();
     };
 
     // INIT

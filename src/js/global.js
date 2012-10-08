@@ -3,10 +3,16 @@
 var global = new function() {
 
     this.VIEWS = {
-        CHAT_LIST:    'CHAT_LIST',
+        CHANNEL_LIST: 'CHANNEL_LIST',
         MESSAGE_LIST: 'MESSAGE_LIST',
         LOGIN:        'LOGIN',
         CREATE_CHAT:  'CREATE_CHAT'
+    };
+
+    this.PLATFORMS = {
+        WEB:     'WEB',
+        IOS:     'IOS',
+        ANDROID: 'ANDROID'
     };
 
     // DATA
@@ -19,12 +25,19 @@ var global = new function() {
 
         this.viewModel = viewModel;
 
-        this.registerPushCallback();
+        // Skiping native initialization if using web platform (in order to ease development and debugging)
 
-        // ASYNC (nothing can be after this lines)
+        if (this.viewModel.platform() != this.PLATFORMS.WEB) {
 
-        this.initTopbar(viewModel.activeView());
-        this.initTabbar(viewModel.activeView());
+            // INITIALIZATIION FOR NATIVE COMPONENTS FOR MOBILE APPS
+
+            this.registerPushCallback();
+
+            // ASYNC (nothing can be after this lines)
+
+            this.initTopbar(viewModel.activeView());
+            this.initTabbar(viewModel.activeView());
+        }
 
     };
 
@@ -37,8 +50,8 @@ var global = new function() {
         var next = null;
 
         switch (viewName) {
-            case global.VIEWS.CHAT_LIST:
-                next = this.initChatListTopbar;
+            case global.VIEWS.CHANNEL_LIST:
+                next = this.initChannelListTopbar;
                 break;
             default:
                 forge.logging.error("UNKNOWN VIEWNAME: " + viewName);
@@ -59,8 +72,8 @@ var global = new function() {
         var next = null;
 
         switch (viewName) {
-            case global.VIEWS.CHAT_LIST:
-                next = this.initChatListTabbar;
+            case global.VIEWS.CHANNEL_LIST:
+                next = this.initChannelListTabbar;
                 break;
             default:
                 forge.logging.error("UNKNOWN VIEWNAME: " + viewName);
@@ -76,7 +89,7 @@ var global = new function() {
 
     // TOPBAR HANDLERS
 
-    this.initChatListTopbar = function () {
+    this.initChannelListTopbar = function () {
 
         // Already cleaned topbar
 
@@ -94,7 +107,7 @@ var global = new function() {
 
     // TABBAR HANDLERS
 
-    this.initChatListTabbar = function () {
+    this.initChannelListTabbar = function () {
 
         // Already cleaned tabbar
 
