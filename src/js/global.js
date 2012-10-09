@@ -2,14 +2,16 @@
 
 var global = new function() {
 
-    this.VIEWS = {
+    var self = this;
+
+    self.VIEWS = {
         CHANNEL_LIST: 'CHANNEL_LIST',
         MESSAGE_LIST: 'MESSAGE_LIST',
         LOGIN:        'LOGIN',
         CREATE_CHAT:  'CREATE_CHAT'
     };
 
-    this.PLATFORMS = {
+    self.PLATFORMS = {
         WEB:     'WEB',
         IOS:     'IOS',
         ANDROID: 'ANDROID'
@@ -17,89 +19,84 @@ var global = new function() {
 
     // DATA
 
-    this.viewModel = null;
+    self.viewModel = null;
+
+    // Used for initializing async topbar and tabbat removal!
+    self.next      = null;
 
     // FUNCTIONS
 
-    this.initNativeUI = function (viewModel) {
+    self.initNativeUI = function (viewModel) {
 
-        this.viewModel = viewModel;
+        self.viewModel = viewModel;
 
         // Skiping native initialization if using web platform (in order to ease development and debugging)
 
-        if (this.viewModel.platform() != this.PLATFORMS.WEB) {
+        if (self.viewModel.platform() != self.PLATFORMS.WEB) {
 
             // INITIALIZATIION FOR NATIVE COMPONENTS FOR MOBILE APPS
 
-            this.registerPushCallback();
+            self.registerPushCallback();
 
             // ASYNC (nothing can be after this lines)
 
-            this.initTopbar(viewModel.activeView());
-            this.initTabbar(viewModel.activeView());
+            self.initTopbar(self.viewModel.activeView());
+            self.initTabbar(self.viewModel.activeView());
         }
 
     };
 
     // INIT
 
-    this.initTopbar = function (viewName) {
+    self.initTopbar = function (viewName) {
 
         forge.logging.info("INIT TOPBAR OF : " + viewName);
 
-        var next = null;
-
         switch (viewName) {
             case global.VIEWS.CHANNEL_LIST:
-                next = this.initChannelListTopbar;
+                self.next = self.initChannelListTopbar;
                 break;
             default:
                 forge.logging.error("UNKNOWN VIEWNAME: " + viewName);
                 return;
         }
 
-        forge.tabbar.removeButtons(
-            $.proxy(next, this),
-            $.proxy(this.showError, this)
-        );
+        // Async
+        forge.tabbar.removeButtons(self.next, self.showError);
 
     };
 
-    this.initTabbar = function (viewName) {
+    self.initTabbar = function (viewName) {
 
         forge.logging.info("INIT TABBAR OF : " + viewName);
 
-        var next = null;
-
         switch (viewName) {
             case global.VIEWS.CHANNEL_LIST:
-                next = this.initChannelListTabbar;
+                self.next = self.initChannelListTabbar;
                 break;
             default:
                 forge.logging.error("UNKNOWN VIEWNAME: " + viewName);
                 return;
         }
 
-        forge.tabbar.removeButtons(
-            $.proxy(next, this),
-            $.proxy(this.showError, this)
-        );
+        // Async
+        forge.tabbar.removeButtons(self.next, self.showError);
 
     };
 
     // TOPBAR HANDLERS
 
-    this.initChannelListTopbar = function () {
+    self.initChannelListTopbar = function () {
 
         // Already cleaned topbar
 
         forge.logging.info("CREATING CHATLIST TOPBAR");
 
         forge.topbar.addButton({
-                text: "Search",
+                text: "Channels",
                 position: "left"
             }, function () {
-                alert("CHAT_LIST")
+                self.viewModel.showChannels();
             }
         );
 
@@ -107,15 +104,13 @@ var global = new function() {
 
     // TABBAR HANDLERS
 
-    this.initChannelListTabbar = function () {
+    self.initChannelListTabbar = function () {
 
         // Already cleaned tabbar
 
-        var self = this;
-
         forge.logging.debug("CREATING TABBAR BUTTONS FOR CHAT_LIST!!!!");
 
-        if (this.viewModel.loggedIn() == true) {
+        if (self.viewModel.loggedIn() == true) {
 
             forge.tabbar.addButton({
                     icon: "img/pizza.png",
@@ -125,7 +120,7 @@ var global = new function() {
 
                     button.onPressed.addListener(function () {
                         button.setActive();
-                        self.viewModel.showCreateChat();
+                        self.viewModel.showCreateChannel();
                     });
                 }
             );
@@ -138,7 +133,7 @@ var global = new function() {
 
                     button.onPressed.addListener(function () {
                         button.setActive();
-                        self.viewModel.showLogOut();
+                        self.viewModel.logOut();
                     });
                 }
             );
@@ -160,13 +155,13 @@ var global = new function() {
         }
     };
 
-    this.registerPushCallback = function () {
+    self.registerPushCallback = function () {
         forge.event.messagePushed.addListener(function (msg) {
             alert(msg.alert);
         });
     };
 
-    this.showError = function () {
+    self.showError = function () {
         alert("ERROR!");
     };
 

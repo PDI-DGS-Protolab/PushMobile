@@ -1,5 +1,7 @@
 function ViewModel(global) {
 
+    this.global = global;
+
     // VIEW NAMES
     this.VIEWS = global.VIEWS;
 
@@ -12,7 +14,7 @@ function ViewModel(global) {
 
     this.platform = ko.observable(this.PLATFORMS.ANDROID);
 
-    this.loggedIn = ko.observable(true);
+    this.loggedIn = ko.observable(false);
 
     this.newChannelName = ko.observable();
 
@@ -46,8 +48,12 @@ function ViewModel(global) {
         this.activeView(this.VIEWS.LOGIN);
     };
 
-    this.showLogOut = function () {
+    this.logOut = function () {
         this.activeView(this.VIEWS.CHANNEL_LIST);
+        this.loggedIn(false);
+
+        // Async call
+        this.init();
     };
 
     this.showCreateChannel = function () {
@@ -62,8 +68,23 @@ function ViewModel(global) {
         this.showChannels();
     };
 
+    this.logIn = function () {
+
+        this.loggedIn(true);
+        this.showChannels();
+
+        // Async call (no code allowed after this point)
+        this.init();
+
+    };
+
+    // Async
+    this.init = function () {
+        this.global.initNativeUI(this);
+    }
+
     // INIT
 
-    global.initNativeUI(this);
+    this.init();
 
 }
