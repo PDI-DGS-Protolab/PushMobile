@@ -1,0 +1,32 @@
+{
+	"config_version": "2",
+	"name": "PushMobileApp",
+	"author": "mac@tid.es",
+	"version": "0.1",
+	"platform_version": "v1.4",
+	"description": "An empty app created by default",
+	"modules": {
+		"logging": {
+			"level": "DEBUG"
+		},
+        "topbar": true,
+        "tabbar": true,
+        "event": true,
+		"contact": true,
+		"file": true,
+		"is": true,
+		"media": true,
+		"prefs": true,
+		"request": {
+			"permissions": ["http://*/*", "https://*/*"]
+		},
+		"tools": true,
+		"reload": true
+	},
+    "partners": {
+        "parse": {
+            "applicationId": "cfwE37ibOGu7BVeasCGFJZrIDOYvLnFQ7sBuyDOw",
+            "clientKey": "0I5YBUg30e9t1FKhabb5C6Wq3obzptcQi5yLFDLS"
+        }
+    }
+}
