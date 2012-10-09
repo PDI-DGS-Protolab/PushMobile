@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PushMobileApp</string>
+    <string name="uuid">280136a0096811e2b68c12313d1adcbe</string>
+    <string name="config_hash">cb94247b5f151312dfdd6ab010ab64c48aacee85</string>
+    <string name="trigger_domain">https://trigger.io</string>
+    <string name="payments_publicKey">PAYMENTS_PUBLIC_KEY_HERE</string>
+    <string name="splashimage">SPLASH_IMAGE_HERE</string>
+    <string name="splashimage_landscape">SPLASH_IMAGE_LANDSCAPE_HERE</string>
+    <string name="facebook_appid" />
+    <string name="disable_ics_acceleration">no</string>
+    <string-array name="modules">
+        <item>io.trigger.forge.android.modules.topbar</item><item>io.trigger.forge.android.modules.tools</item><item>io.trigger.forge.android.modules.tabbar</item><item>io.trigger.forge.android.modules.request</item><item>io.trigger.forge.android.modules.reload</item><item>io.trigger.forge.android.modules.prefs</item><item>io.trigger.forge.android.modules.partners_parse</item><item>io.trigger.forge.android.modules.media</item><item>io.trigger.forge.android.modules.file</item><item>io.trigger.forge.android.modules.contact</item><item>io.trigger.forge.android.modules.internal</item>
+        <item>io.trigger.forge.android.modules.logging</item>
+        <item>io.trigger.forge.android.modules.launchimage</item>
+        <item>io.trigger.forge.android.modules.event</item>
+    </string-array>
+</resources>

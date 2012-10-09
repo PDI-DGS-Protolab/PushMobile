@@ -1,0 +1,25 @@
+{
+  "config_hash": "CONFIG_HASH_HERE", 
+  "facebook_appid": "", 
+  "ipad_orientation": "any", 
+  "iphone_orientation": "any", 
+  "modules": [
+    "internal", 
+    "launchimage", 
+    "logging", 
+    "event", 
+    "display", 
+    "contact", 
+    "file", 
+    "media", 
+    "partners.parse", 
+    "prefs", 
+    "reload", 
+    "request", 
+    "tabbar", 
+    "tools", 
+    "topbar"
+  ], 
+  "trigger_domain": "TRIGGER_DOMAIN_HERE", 
+  "uuid": "UUID_HERE"
+}

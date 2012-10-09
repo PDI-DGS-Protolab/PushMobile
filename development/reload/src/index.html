@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+				<script>
+				function window$forge$_receive(result) {
+					try {
+						window.forge._receive(JSON.parse(result));
+					} catch (e) {
+						forge.logging.error("window$forge$_receive -> " + e);
+					}
+				}
+			</script><script src='../forge/all.js'></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <title>PUSH CHANNELS</title>
+
+        <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- CATALYST DEBUGGER -->
+        <!--<script src="https://trigger.io/catalyst/target/target-script-min.js#DE3EF14E-DC75-44EC-AD91-575F2D96A8DC"></script>-->
+
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/jquery.mobile-1.1.0.min.js"></script>
+        <script src="js/knockout-2.1.0.js"></script>
+
+        <script type="text/javascript" src="js/global.js"></script>
+
+        <script type="text/javascript" src="js/viewmodels/viewModel.js"></script>
+        <script type="text/javascript" src="js/models/models.js"></script>
+
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </head>
+    <body>
+
+        <div data-bind="visible: platform() == PLATFORMS.WEB">
+            <span data-bind="click: showChannels"><a href="#">Channels</a></span>
+            <span data-bind="click: showCreateChannel"><a href="#">New channel</a></span>
+            <span data-bind="click: showLogIn"><a href="#">Log in</a></span>
+            <span data-bind="click: logOut"><a href="#">Log out</a></span>
+            <span data-bind="click: test"><a href="#">Test</a></span>
+        </div>
+
+        <div data-bind="visible: activeView() == VIEWS.CHANNEL_LIST">
+            <ul data-bind="foreach: channels" data-role="listview">
+                <li>
+                    <a href="#" data-bind="click: showMessages.bind($data, $root)">
+                        <span data-bind="text: name"></span>
+                        <span data-bind="text: num"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div data-bind="visible: activeView() == VIEWS.MESSAGE_LIST">
+            <ul data-bind="foreach: messages" data-role="listview">
+                <li>
+                    <span data-bind="text: text"></span>
+                    <span data-bind="text: time"></span>
+                </li>
+            </ul>
+        </div>
+
+        <div data-bind="visible: activeView() == VIEWS.LOGIN" class="padding">
+
+            <label for="login">Login:</label>
+            <input type="text" data-bind="value: login" data-inset="true" id="login">
+
+            <label for="password">Password:</label>
+            <input type="password" data-bind="value: pwd" data-inset="true" id="password">
+
+            <button data-bind="click: logIn" data-theme="b" data-role="button">Log in</button>
+            <button data-bind="click: test" data-theme="b" data-role="button">Test</button>
+        </div>
+
+        <div data-bind="visible: activeView() == VIEWS.CREATE_CHANNEL" class="padding">
+
+            <label for="channelName">Channel name:</label>
+            <input type="text" data-bind="value: newChannelName" id="channelName">
+
+            <button data-bind="click: createChannel" data-theme="b" data-role="button">Create new channel</button>
+        </div>
+
+    </body>
+</html>
