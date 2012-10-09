@@ -2,267 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9f91ed3-c27b-4778-94f6-0d5ec42de5cc" name="Default" comment="First version">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.lib/android-platform.apk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/output/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable-hdpi/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable-hdpi/facebook_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable-hdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable-ldpi/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable-ldpi/facebook_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable-ldpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable-mdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable-xhdpi/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable/facebook_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/drawable/splash.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/raw/keystore.bks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/modules/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/Default-568h@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/Default-Landscape@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/Default-Landscape~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/Default-Portrait@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/Default-Portrait~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/Default@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/Default~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/FBDialog.bundle/images/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/FBDialog.bundle/images/close@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/FBDialog.bundle/images/fbicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/ForgeCore.bundle/templateappViewController.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/Forge" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/ResourceRules.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/embedded.mobileprovision" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/en.lproj/InfoPlist.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/ipad-retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/tabs_modalWebViewController.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/Default-568h@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/Default-Landscape@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/Default-Landscape~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/Default-Portrait@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/Default-Portrait~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/Default@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/Default~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/FBDialog.bundle/images/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/FBDialog.bundle/images/close@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/FBDialog.bundle/images/fbicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/ForgeCore.bundle/templateappViewController.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/Forge" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/en.lproj/InfoPlist.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/ipad-retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/tabs_modalWebViewController.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/apk-signer.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/debug.keystore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/ios-sim-xc4.2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/ios-sim-xc4.3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/css/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/css/images/icons-18-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/css/images/icons-18-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/css/images/icons-36-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/css/images/icons-36-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/img/pizza.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/img/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/output/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable-hdpi/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable-hdpi/facebook_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable-hdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable-ldpi/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable-ldpi/facebook_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable-ldpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable-mdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable-xhdpi/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable/facebook_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/drawable/splash.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/raw/keystore.bks" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/Default-568h@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/Default-Landscape@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/Default-Landscape~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/Default-Portrait@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/Default-Portrait~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/Default@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/Default~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/FBDialog.bundle/images/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/FBDialog.bundle/images/close@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/FBDialog.bundle/images/fbicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/ForgeCore.bundle/templateappViewController.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/Forge" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/ResourceRules.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/css/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/css/images/icons-18-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/css/images/icons-18-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/css/images/icons-36-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/css/images/icons-36-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/img/pizza.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/img/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/embedded.mobileprovision" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/en.lproj/InfoPlist.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/ipad-retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/tabs_modalWebViewController.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/Default-568h@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/Default-Landscape@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/Default-Landscape~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/Default-Portrait@2x~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/Default-Portrait~ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/Default@2x~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/Default~iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/FBDialog.bundle/images/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/FBDialog.bundle/images/close@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/FBDialog.bundle/images/fbicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/ForgeCore.bundle/templateappViewController.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/Forge" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/css/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/css/images/icons-18-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/css/images/icons-18-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/css/images/icons-36-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/css/images/icons-36-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/img/pizza.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/img/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/en.lproj/InfoPlist.strings" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/ipad-retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/normal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/tabs_modalWebViewController.nib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/css/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/css/images/icons-18-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/css/images/icons-18-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/css/images/icons-36-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/css/images/icons-36-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/img/pizza.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/img/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/release/android/pushmobileapp-1349078878.apk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/PushMobileApp.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/assets/forge/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/assets/forge/disable-frames.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/layout/external_webview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/layout/splashscreen.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/android/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/android_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/build.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/check_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/chrome_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/customer_goals.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/customer_phases.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/customer_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/firefox_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/ie_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/internal_goals.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/internal_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/ios_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/lib.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/migrate_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/modules/activations.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/modules/icons.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/modules/launchimage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/modules/reload.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/predicates.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/reload.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/safari_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/web_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/generate_dynamic/wp_tasks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/PkgInfo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/app_config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/assets/forge/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/device-ios.app/assets/forge/disable-frames.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/PkgInfo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/app_config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/assets/forge/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/ios/simulator-ios.app/assets/forge/disable-frames.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/changeset.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/hash.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/invalidating_config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/local_config_schema.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/poster/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/poster/encode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/poster/streaminghttp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/schema.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/template.entitlements" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/validictory/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/lib/validictory/validator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.template/platform_version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/forge/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/forge/disable-frames.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/hash_to_file.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/css/jquery.mobile-1.1.0.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/js/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/js/jquery-1.7.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/js/jquery.mobile-1.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/js/knockout-2.1.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/js/models/models.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/assets/src/js/viewmodels/viewModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/layout/external_webview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/layout/splashscreen.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/android/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/PkgInfo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/app_config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/forge/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/forge/disable-frames.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/hash_to_file.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/css/jquery.mobile-1.1.0.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/js/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/js/jquery-1.7.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/js/jquery.mobile-1.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/js/knockout-2.1.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/js/models/models.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/device-ios.app/assets/src/js/viewmodels/viewModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/PkgInfo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/app_config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/forge/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/forge/disable-frames.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/hash_to_file.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/css/jquery.mobile-1.1.0.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/js/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/js/jquery-1.7.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/js/jquery.mobile-1.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/js/knockout-2.1.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/js/models/models.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/ios/simulator-ios.app/assets/src/js/viewmodels/viewModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/css/jquery.mobile-1.1.0.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/js/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/js/jquery-1.7.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/js/jquery.mobile-1.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/js/knockout-2.1.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/js/models/models.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/development/reload/src/js/viewmodels/viewModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PushMobileApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -282,10 +22,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="viewModel.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="viewModel.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/viewmodels/viewModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="39" selection-start="2448" selection-end="2448" vertical-scroll-proportion="0.40946501">
+            <state line="104" column="39" selection-start="2448" selection-end="2448" vertical-scroll-proportion="-7.6538463">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -494,7 +243,11 @@
       <created>1349806431128</created>
       <updated>1349806431128</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="First version">
+      <created>1349807406327</created>
+      <updated>1349807406327</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -576,11 +329,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/parse-js-blank/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="8" selection-start="1093" selection-end="1432" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="22" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
@@ -673,7 +421,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/viewmodels/viewModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="39" selection-start="2448" selection-end="2448" vertical-scroll-proportion="0.40946501">
+        <state line="104" column="39" selection-start="2448" selection-end="2448" vertical-scroll-proportion="-7.6538463">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
