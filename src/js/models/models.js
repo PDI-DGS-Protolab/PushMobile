@@ -1,20 +1,22 @@
-function Channel(name, id, num) {
+function Channel(json) {
 
-    this.name = name;
-    this.id = id;
-    this.num = num;
+    this.name     = json.name;
+    this.id       = json.id;
+    this.num      = json.num;
+    this.messages = json.messages;
 
     this.showMessages = function (viewModel) {
+
         viewModel.selectedChannel(this);
-        viewModel.showMessages();
+        viewModel.showMessages(this);
     }
 
 }
 
-function Message(text, id, time) {
+function Message(json) {
 
-    this.text = text;
-    this.id = id;
-    this.time = time;
+    this.text = json.text
+    this.id = json.id;
+    this.time = json.time;
 
 }

@@ -2,7 +2,9 @@ $(document).ready(function() {
 
     //forge.enableDebug();
 
-    var vm = new ViewModel(global);
+    var storage = new Storage();
+
+    var vm = new ViewModel(global, storage);
 
     ko.applyBindings(vm);
 

@@ -1,6 +1,7 @@
-function ViewModel(global) {
+function ViewModel(global, storage) {
 
-    this.global = global;
+    this.global  = global;
+    this.storage = storage;
 
     // VIEW NAMES
     this.VIEWS = global.VIEWS;
@@ -8,35 +9,37 @@ function ViewModel(global) {
     // AVAILABLE PLATFORMS
     this.PLATFORMS = global.PLATFORMS;
 
+    ///////////////////////////////////////////////////
     // OBSERVABLE DATA
+    ///////////////////////////////////////////////////
 
     this.activeView = ko.observable(this.VIEWS.CHANNEL_LIST);
 
-    this.platform = ko.observable(this.PLATFORMS.ANDROID);
+    this.platform = ko.observable(this.PLATFORMS.WEB);
 
-    this.loggedIn = ko.observable(false);
+    this.loggedIn = ko.observable(true);
 
     this.newChannelName = ko.observable();
 
-    this.channels = ko.observableArray([
-        new Channel('sport', 1, 4),
-        new Channel('tv', 3, 6)
-    ]);
+    this.newMessage = ko.observable();
+
+    this.channels = ko.observableArray([]);
 
     this.selectedChannel = ko.observable();
 
-    this.messages = ko.observableArray([
-        new Message('Text from 1', 1, "24/Dev"),
-        new Message('Text from 2', 2, "31/Dec")
-    ]);
+    this.messages = ko.observableArray([]);
 
     this.login = ko.observable();
 
     this.pwd = ko.observable();
 
+    ///////////////////////////////////////////////////
     // VIEW TRANSITIONS
+    ///////////////////////////////////////////////////
 
-    this.showMessages = function () {
+    this.showMessages = function (channel) {
+        this.loadMessages(channel);
+
         this.activeView(this.VIEWS.MESSAGE_LIST);
     };
 
@@ -48,23 +51,28 @@ function ViewModel(global) {
         this.activeView(this.VIEWS.LOGIN);
     };
 
+    this.showCreateChannel = function () {
+        this.activeView(this.VIEWS.CREATE_CHANNEL);
+    };
+
+    ///////////////////////////////////////////////////
+    // OPERATIONS
+    ///////////////////////////////////////////////////
+
     this.logOut = function () {
         this.activeView(this.VIEWS.CHANNEL_LIST);
         this.loggedIn(false);
 
         // Async call
-        this.init();
-    };
-
-    this.showCreateChannel = function () {
-        this.activeView(this.VIEWS.CREATE_CHANNEL);
+        this.initUI();
     };
 
     this.createChannel = function () {
 
-        var newChannel = new Channel(this.newChannelName(), 3, 4);
+        var channel = this.storage.createChannel(this.newChannelName());
 
-        this.channels.push(newChannel);
+        this.channels.push(channel);
+
         this.showChannels();
     };
 
@@ -74,17 +82,66 @@ function ViewModel(global) {
         this.showChannels();
 
         // Async call (no code allowed after this point)
-        this.init();
+        this.initUI();
 
     };
 
+    this.storeChannel = function (channel) {
+        var channels = this.storage.getChannels();
+
+        channels.push(channel);
+
+        this.storage.storeChannels(channels);
+
+        this.channels.push(channel);
+    }
+
+    this.postMessage = function () {
+
+        var channel = this.selectedChannel();
+
+        var message = this.storage.createMessage(channel, this.newMessage());
+
+        channel.messages.push(message);
+
+        this.messages.push(message);
+    }
+
+    ///////////////////////////////////////////////////
+    // INIT
+    ///////////////////////////////////////////////////
+
+    this.loadChannels = function () {
+
+        var channels = this.storage.getChannels();
+
+        for (var i=0; i<channels.length; i++) {
+            var channelData = channels[i];
+
+            this.channels.push(new Channel(channelData));
+        }
+    }
+
+    this.loadMessages = function (channel) {
+
+        // Cleaning messages from older channel!
+        this.messages.removeAll();
+
+        var messages = channel.messages;
+
+        for (var i=0; i<messages.length; i++) {
+            var messageData = messages[i];
+
+            this.messages.push(new Message(messageData));
+        }
+    }
+
     // Async
-    this.init = function () {
+    this.initUI = function () {
         this.global.initNativeUI(this);
     }
 
-    // INIT
-
-    this.init();
+    this.loadChannels();
+    this.initUI();
 
 }
